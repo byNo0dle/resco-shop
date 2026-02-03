@@ -1,0 +1,21 @@
+{
+  "shop": {
+    "language": "es",
+    "currency": "PEN"
+  },
+  "system": {
+    "extensions": [
+      {
+        "name": "sample",
+        "resolve": "extensions/sample",
+        "enabled": false
+      },
+      {
+        "name": "marias-catalog",
+        "resolve": "extensions/marias-catalog",
+        "enabled": true
+      }
+    ],
+    "theme": "sample"
+  }
+}
