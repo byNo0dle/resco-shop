@@ -1,6 +1,8 @@
 // This component hides the default Evershop header and footer on the homepage
 // since we have a custom landing page design
 
+import React from "react";
+
 export default function HideDefaultLayout() {
   return (
     <style>{`
