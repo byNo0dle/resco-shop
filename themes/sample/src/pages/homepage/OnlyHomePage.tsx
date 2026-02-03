@@ -41,13 +41,13 @@ function Header() {
       <div className="flex flex-col">
         <span
           className="text-2xl font-bold tracking-wider"
-          style={{ fontFamily: 'Playfair Display, serif', color: '#647257' }}
+          style={{ fontFamily: 'Playfair Display, serif', color: '#12362a' }}
         >
           MARIA'S MEAT MARKET
         </span>
         <span
           className="text-xs tracking-widest"
-          style={{ fontFamily: 'sans-serif', color: '#647257' }}
+          style={{ fontFamily: 'sans-serif', color: '#12362a' }}
         >
           DISTRIBUIDORA DE CARNES
         </span>
@@ -60,7 +60,7 @@ function Header() {
             key={item}
             href={item === 'HOME' ? '/' : item === 'COMPRAR' ? '/productos' : `#${item.toLowerCase().replace(' ', '-')}`}
             className={`text-xs tracking-wide transition-opacity hover:opacity-70 ${index === 1 ? 'font-semibold underline' : 'font-medium'}`}
-            style={{ fontFamily: 'sans-serif', color: '#647257' }}
+            style={{ fontFamily: 'sans-serif', color: '#12362a' }}
           >
             {item}
           </a>
@@ -74,7 +74,7 @@ function Header() {
           height="24"
           viewBox="0 0 24 24"
           fill="none"
-          stroke="#647257"
+          stroke="#12362a"
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -101,13 +101,13 @@ function HeroSection() {
       <div className="flex-1 flex flex-col gap-8">
         <span
           className="text-xs font-semibold tracking-widest"
-          style={{ color: '#647257' }}
+          style={{ color: '#12362a' }}
         >
           CALIDAD PREMIUM
         </span>
         <h1
           className="text-6xl leading-tight"
-          style={{ fontFamily: 'Playfair Display, serif', color: '#647257' }}
+          style={{ fontFamily: 'Playfair Display, serif', color: '#12362a' }}
         >
           Carnes de Alta<br />
           Calidad para<br />
@@ -123,7 +123,7 @@ function HeroSection() {
         <a
           href="/productos"
           className="inline-flex items-center justify-center px-8 py-4 text-xs font-semibold tracking-wide transition-opacity hover:opacity-90"
-          style={{ backgroundColor: '#647257', color: '#f0ece9' }}
+          style={{ backgroundColor: '#12362a', color: '#f0ece9' }}
         >
           VER PRODUCTOS
         </a>
@@ -164,7 +164,7 @@ function ProductCard({ product }: { product: Product }) {
         <a href={product.url}>
           <h3
             className="text-lg font-semibold tracking-wide text-center hover:opacity-70 transition-opacity"
-            style={{ fontFamily: 'Playfair Display, serif', color: '#647257' }}
+            style={{ fontFamily: 'Playfair Display, serif', color: '#12362a' }}
           >
             {product.name.toUpperCase()}
           </h3>
@@ -192,7 +192,7 @@ function ProductCard({ product }: { product: Product }) {
           <a
             href={product.url}
             className="px-6 py-2 text-xs font-medium tracking-wide border transition-all hover:bg-opacity-10"
-            style={{ borderColor: '#647257', color: '#647257' }}
+            style={{ borderColor: '#12362a', color: '#12362a' }}
           >
             INFO
           </a>
@@ -208,7 +208,7 @@ function ProductCard({ product }: { product: Product }) {
               height="18"
               viewBox="0 0 24 24"
               fill="none"
-              stroke="#647257"
+              stroke="#12362a"
               strokeWidth="2"
             >
               <circle cx="9" cy="21" r="1"></circle>
@@ -245,7 +245,7 @@ function ProductsSection({ products }: { products: Product[] }) {
       <div className="flex items-center gap-4">
         <h2
           className="text-4xl"
-          style={{ fontFamily: 'Playfair Display, serif', color: '#647257' }}
+          style={{ fontFamily: 'Playfair Display, serif', color: '#12362a' }}
         >
           NUESTROS
         </h2>
@@ -254,7 +254,7 @@ function ProductsSection({ products }: { products: Product[] }) {
           height="32"
           viewBox="0 0 24 24"
           fill="none"
-          stroke="#647257"
+          stroke="#12362a"
           strokeWidth="2"
         >
           <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"></path>
@@ -262,7 +262,7 @@ function ProductsSection({ products }: { products: Product[] }) {
         </svg>
         <h2
           className="text-4xl"
-          style={{ fontFamily: 'Playfair Display, serif', color: '#647257' }}
+          style={{ fontFamily: 'Playfair Display, serif', color: '#12362a' }}
         >
           PRODUCTOS
         </h2>
@@ -277,18 +277,18 @@ function ProductsSection({ products }: { products: Product[] }) {
 
       {/* Carousel Dots */}
       <div className="flex items-center gap-3">
-        <span className="w-3 h-3 rounded-full" style={{ backgroundColor: '#647257' }}></span>
-        <span className="w-2 h-2 rounded-full opacity-30" style={{ backgroundColor: '#647257' }}></span>
-        <span className="w-2 h-2 rounded-full opacity-30" style={{ backgroundColor: '#647257' }}></span>
-        <span className="w-2 h-2 rounded-full opacity-30" style={{ backgroundColor: '#647257' }}></span>
-        <span className="w-2 h-2 rounded-full opacity-30" style={{ backgroundColor: '#647257' }}></span>
+        <span className="w-3 h-3 rounded-full" style={{ backgroundColor: '#12362a' }}></span>
+        <span className="w-2 h-2 rounded-full opacity-30" style={{ backgroundColor: '#12362a' }}></span>
+        <span className="w-2 h-2 rounded-full opacity-30" style={{ backgroundColor: '#12362a' }}></span>
+        <span className="w-2 h-2 rounded-full opacity-30" style={{ backgroundColor: '#12362a' }}></span>
+        <span className="w-2 h-2 rounded-full opacity-30" style={{ backgroundColor: '#12362a' }}></span>
       </div>
 
       {/* View All Products Button */}
       <a
         href="/productos"
         className="px-8 py-3 text-xs font-medium tracking-wide border transition-all hover:bg-opacity-10"
-        style={{ borderColor: '#647257', color: '#647257' }}
+        style={{ borderColor: '#12362a', color: '#12362a' }}
       >
         VER TODOS LOS PRODUCTOS
       </a>
@@ -313,7 +313,7 @@ function NuestraCarneSection() {
       {/* Content */}
       <div
         className="flex-1 flex flex-col justify-center gap-8 p-20"
-        style={{ backgroundColor: '#647257' }}
+        style={{ backgroundColor: '#12362a' }}
       >
         <span
           className="text-xs font-semibold tracking-widest opacity-70"
@@ -357,7 +357,7 @@ function SostenibilidadSection() {
   const features = [
     {
       icon: (
-        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#647257" strokeWidth="2">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#12362a" strokeWidth="2">
           <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"></path>
           <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"></path>
         </svg>
@@ -367,7 +367,7 @@ function SostenibilidadSection() {
     },
     {
       icon: (
-        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#647257" strokeWidth="2">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#12362a" strokeWidth="2">
           <path d="M7 19H4.815a1.83 1.83 0 0 1-1.57-.881 1.785 1.785 0 0 1-.004-1.784L7.196 9.5"></path>
           <path d="M11 19h8.203a1.83 1.83 0 0 0 1.556-.89 1.784 1.784 0 0 0 0-1.775l-1.226-2.12"></path>
           <path d="m14 16-3 3 3 3"></path>
@@ -381,7 +381,7 @@ function SostenibilidadSection() {
     },
     {
       icon: (
-        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#647257" strokeWidth="2">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#12362a" strokeWidth="2">
           <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
           <circle cx="12" cy="10" r="3"></circle>
         </svg>
@@ -401,13 +401,13 @@ function SostenibilidadSection() {
       <div className="flex flex-col items-center gap-5 text-center">
         <span
           className="text-xs font-semibold tracking-widest"
-          style={{ color: '#647257' }}
+          style={{ color: '#12362a' }}
         >
           COMPROMISO AMBIENTAL
         </span>
         <h2
           className="text-5xl"
-          style={{ fontFamily: 'Playfair Display, serif', color: '#647257' }}
+          style={{ fontFamily: 'Playfair Display, serif', color: '#12362a' }}
         >
           Sostenibilidad
         </h2>
@@ -431,7 +431,7 @@ function SostenibilidadSection() {
             {feature.icon}
             <h3
               className="text-xl text-center whitespace-pre-line leading-tight"
-              style={{ fontFamily: 'Playfair Display, serif', color: '#647257' }}
+              style={{ fontFamily: 'Playfair Display, serif', color: '#12362a' }}
             >
               {feature.title}
             </h3>
@@ -461,13 +461,13 @@ function ContactSection() {
       >
         <span
           className="text-xs font-semibold tracking-widest"
-          style={{ color: '#647257' }}
+          style={{ color: '#12362a' }}
         >
           CONTACTO
         </span>
         <h2
           className="text-5xl leading-tight"
-          style={{ fontFamily: 'Playfair Display, serif', color: '#647257' }}
+          style={{ fontFamily: 'Playfair Display, serif', color: '#12362a' }}
         >
           Listo para<br />
           Probar lo Mejor?
@@ -483,31 +483,31 @@ function ContactSection() {
         {/* Contact Info */}
         <div className="flex flex-col gap-4">
           <div className="flex items-center gap-3">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#647257" strokeWidth="2">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#12362a" strokeWidth="2">
               <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
             </svg>
-            <span className="text-sm" style={{ color: '#647257' }}>+51 987 654 321</span>
+            <span className="text-sm" style={{ color: '#12362a' }}>+51 987 654 321</span>
           </div>
           <div className="flex items-center gap-3">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#647257" strokeWidth="2">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#12362a" strokeWidth="2">
               <rect width="20" height="16" x="2" y="4" rx="2"></rect>
               <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
             </svg>
-            <span className="text-sm" style={{ color: '#647257' }}>pedidos@mariasmeat.com</span>
+            <span className="text-sm" style={{ color: '#12362a' }}>pedidos@mariasmeat.com</span>
           </div>
           <div className="flex items-center gap-3">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#647257" strokeWidth="2">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#12362a" strokeWidth="2">
               <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
               <circle cx="12" cy="10" r="3"></circle>
             </svg>
-            <span className="text-sm" style={{ color: '#647257' }}>Lima, Perú</span>
+            <span className="text-sm" style={{ color: '#12362a' }}>Lima, Perú</span>
           </div>
         </div>
 
         <a
           href="mailto:pedidos@mariasmeat.com"
           className="inline-flex items-center justify-center px-7 py-3 text-xs font-semibold tracking-wide transition-opacity hover:opacity-90 w-fit"
-          style={{ backgroundColor: '#647257', color: '#f0ece9' }}
+          style={{ backgroundColor: '#12362a', color: '#f0ece9' }}
         >
           ENVIAR MENSAJE
         </a>
@@ -531,7 +531,7 @@ function Footer() {
   return (
     <footer
       className="w-full py-12 px-20"
-      style={{ backgroundColor: '#647257' }}
+      style={{ backgroundColor: '#12362a' }}
     >
       <div className="grid grid-cols-5 gap-8">
         {/* Llámanos */}
